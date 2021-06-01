@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>standard_project.application</RootNamespace>
+    <RootNamespace>standardProject.Application</RootNamespace>
   </PropertyGroup>
 
 </Project>
