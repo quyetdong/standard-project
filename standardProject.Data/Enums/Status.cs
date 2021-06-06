@@ -4,7 +4,7 @@ using System.Text;
 
 namespace standardProject.Data.Enums
 {
-  public enum CategoryStatus
+  public enum Status
   {
     InActive,
     Active
@@ -21,10 +21,7 @@ namespace standardProject.Data.Enums
 
   public enum TransactionStatus
   {
-    InProgress,
-    Confirmed,
-    Shipping,
     Success,
-    Canceled
+    Failed
   }
 }

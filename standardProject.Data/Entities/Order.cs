@@ -5,17 +5,17 @@ using System.Text;
 
 namespace standardProject.Data.Entities
 {
-  public class Transaction
+  public class Order
   {
-    public int Id { get; set; }
-    public DateTime TransactionDate { get; set; }
-    public string ExternalTransactionId { get; set; }
-    public decimal Amount { get; set; }
-    public decimal Fee { get; set; }
-    public string Result { get; set; }
-    public string Message { get; set; }
-    public TransactionStatus Status { get; set; }
-    public string Provider { get; set; }
+    public int Id { set; get; }
+    public DateTime OrderDate { set; get; }
+    public Guid UserId { set; get; }
+    public string ShipName { set; get; }
+    public string ShipAddress { set; get; }
+    public string ShipEmail { set; get; }
+    public string ShipPhoneNumber { set; get; }
+    public OrderStatus Status { set; get; }
 
+    public List<OrderDetail> OrderDetails { get; set; }
   }
 }

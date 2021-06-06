@@ -6,19 +6,21 @@ namespace standardProject.Data.Entities
 {
   public class Product
   {
-    public int Id { get;set;}
-    public string Name { get; set; }
-    public string Description { get; set; }
-    public decimal Price { get; set; }
-    public decimal OriginalPrice { get; set; }
-    public string Detail { get; set; }
-    public int Stock { get; set; }
-    public int ViewCount { get;set;}
-    public DateTime DateCreated { get; set; }
-    public DateTime DateModified { get;set;}
-    public string SEODescription { get; set; }
-    public string SEOTitle { get; set; }
-    public string SEOAlias { get;set;}
+    public int Id { set; get; }
+    public decimal Price { set; get; }
+    public decimal OriginalPrice { set; get; }
+    public int Stock { set; get; }
+    public int ViewCount { set; get; }
+    public DateTime DateCreated { set; get; }
+    public string SeoAlias { set; get; }
+
+    public List<ProductInCategory> ProductInCategories { get; set; }
+
+    public List<OrderDetail> OrderDetails { get; set; }
+
+    public List<Cart> Carts { get; set; }
+
+    public List<ProductTranslation> ProductTranslations { get; set; }
 
   }
 }
