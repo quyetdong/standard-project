@@ -15,6 +15,9 @@ namespace standardProject.Data.Entities
     public Status Status { get; set; }
     public int SEODescription { get; set; }
     public int SEOTitle { get; set; }
+    public List<ProductInCategory> ProductInCategories { get; set; }
+
+    public List<CategoryTranslation> CategoryTranslations { get; set; }
 
   }
 }

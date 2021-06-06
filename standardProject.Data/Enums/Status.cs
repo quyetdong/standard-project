@@ -9,4 +9,19 @@ namespace standardProject.Data.Enums
     InActive,
     Active
   }
+
+  public enum OrderStatus
+  {
+    InProgress,
+    Confirmed,
+    Shipping,
+    Success,
+    Canceled
+  }
+
+  public enum TransactionStatus
+  {
+    Success,
+    Failed
+  }
 }
