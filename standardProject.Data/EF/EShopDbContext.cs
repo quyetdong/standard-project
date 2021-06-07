@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using standardProject.Data.Configuration;
+using standardProject.Data.Configurations;
 using standardProject.Data.Entities;
 using System;
 using System.Collections.Generic;
@@ -22,6 +22,13 @@ namespace standardProject.Data.EF
       modelBuilder.ApplyConfiguration(new ProductInCategoryConfiguration());
       modelBuilder.ApplyConfiguration(new OrderConfiguration());
       modelBuilder.ApplyConfiguration(new OrderDetailConfiguration());
+      modelBuilder.ApplyConfiguration(new CartConfiguration());
+      modelBuilder.ApplyConfiguration(new CategoryTranslationConfiguration());
+      modelBuilder.ApplyConfiguration(new ContactConfiguration());
+      modelBuilder.ApplyConfiguration(new LanguageConfiguration());
+      modelBuilder.ApplyConfiguration(new ProductTranslationConfiguration());
+      modelBuilder.ApplyConfiguration(new PromotionConfiguration());
+      modelBuilder.ApplyConfiguration(new TransactionConfiguration());
 
       //base.OnModelCreating(modelBuilder);
     }

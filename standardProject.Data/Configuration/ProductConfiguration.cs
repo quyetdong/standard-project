@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace standardProject.Data.Configuration
+namespace standardProject.Data.Configurations
 {
   public class ProductConfiguration : IEntityTypeConfiguration<Product>
   {
